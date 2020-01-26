@@ -1,0 +1,220 @@
+/*@font-face{
+    src: url(Slimlines.ttf);
+    font-family: slimlines;
+}*/
+
+@font-face{
+    src: url(fonts/Roboto-Regular.ttf);
+    font-family: quantum;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: quantum;                                                                 /*AICI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+}
+#nav-bar{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.navbar{
+    background-image: linear-gradient(to right, #741583, #550080);
+    /*background: #550080;*/
+    padding: 0 !important;
+}
+.navbar-brand img{
+    height: 55px;
+    padding-left: 20px;
+
+}
+.navbar-nav li{
+    padding: 0 10px;
+}
+.navbar-nav li a{
+    color: #fff !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+.fa-bars{
+    color:#fff;
+    font-size: 30px !important;
+}
+
+.img-fluid{
+    margin-right: 0;
+}
+.navbar-toggler{
+    outline: none !important;
+}
+#banner{
+    font-family: quantum;                                                                 /*AICI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    background-image: linear-gradient(to right, #770f77, #5f1782);
+    color: #fff;
+    padding-top: 300%;
+    font-size: 20px;
+}
+.robot{
+    opacity: 0;
+}
+#banner a{
+    color: #fff;
+    text-decoration: none;
+}
+.promo-title{
+    font-family: quantum;                                                                 /*AICI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px; 
+}
+.bottom-img{
+    width: 100%;
+}
+
+#sponsors{
+    font-family: quantum;                                                                 /*AICI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    padding: 80px 0;
+}
+.sponsor-img{
+    width: 125px;
+    margin-top: 20px;
+}
+.sponsor-ftc-img{
+    width: 150px;
+    margin-top: 10px;
+}
+.sponsors{
+    padding: 20px;
+}
+.title{
+    font-weight: 550;
+}
+.title::before{
+    content: '';
+    background: #7b1798;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+.title::after{
+    content: '';
+    background: #7b1798;
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(8px);
+}
+
+
+#about-us{
+    font-family: quantum;                                                                 /*AICI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    margin: 100px 0;
+    text-align: center;
+}
+.about-us{
+    border-left: 4px solid #7b1798;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.about-us img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 10px 10px;
+}
+.user-details{
+    font-size: 20px;
+    font-style: bold;
+}
+#poza:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+#contact{
+    background: #f8f9fa;
+    padding: 100px 0;
+}
+#contact p{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.social-icons img{
+    width: 60px;
+    transition: 0,5s;
+}
+.social-icons a:hover img{
+    transform: translateY(-10px);
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1199px) {
+    #about-us{
+        transform: scale(0.2);
+    }
+    .about-us img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        margin: 10px 10px;
+    }
+    #poza:hover{
+        transform: scale(1.1);
+    }
+    .visible-mobile, .visible-tablet, .visible-desktop {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .visible-mobile, .visible-tablet, .hidden-desktop {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width:768px) {
+    .visible-mobile, .hidden-tablet, .visible-desktop {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width:479px) {
+    .hidden-mobile, .visible-tablet, .visible-desktop {
+        display: none !important;
+    }
+}
+
+/*@media only screen and (max-width:768px){
+    .eventsContainer {
+        background-color: rgba(38,50,56,0.85);
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        color: white;
+        width: 100vw;
+        border-radius: 3px;
+    }
+}*/
+
+/*@media only screen and (min-width:769px) {
+    .eventsContainer {
+        background-color: rgba(38,50,56,0.85);
+        position: absolute;
+        bottom: 50px;
+        left: 130px;
+        color: white;
+        width: 500px;
+        border-radius: 3px;
+    }
+
+}*/
